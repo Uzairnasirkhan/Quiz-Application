@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(105,206,199);
+}
+
+.quizapp{
+    color: rgb(12,60,80);
+    text-align: center;
+    margin-top: 40px;
+}
+
+.parent{
+    background-color: rgb(12,60,80);
+    width: 40%;
+    height: 70vh;
+    margin: 40px auto;
+    padding: 25px 30px;
+    border-radius: 20px;
+}
+
+.fields{
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px 20px;
+}
+
+.parent input{
+    width: 90%;
+    padding: 10px;
+    margin: 10px auto;
+    font: 15px;
+    border-radius: 5px;
+    border: 1px solid rgb(12,60,80);
+    outline: none;
+}
+
+.fields button{
+    width: 120px;
+    height: 40px;
+    border: none;
+    margin-top: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    color: white;
+    padding: auto;
+    background-color: rgb(23,107,135);
+}
+
+
+.quizbutton a button{
+    height: 50px;
+    width: 140px;
+    border: none;
+    margin: 0 auto;
+    border-radius: 10px;
+    font-size: 18px;
+    color: white;
+    padding: auto;
+    background-color:rgb(12,60,80);
+}
+
+.hide{
+    visibility: hidden;
+}
+
+.show{
+    visibility: visible;
+}
+
+.quizparent{
+    background-color: rgb(12,60,80);
+    width: 50%;
+    height: 90vh;
+    margin: 30px auto;
+    padding: 25px 30px;
+    border-radius: 20px;
+    color: white;
+
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+#counter{
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    width: 10%;
+    font-size: 16px;
+    background-color: cadetblue;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.footer button{
+    border: none;
+    color: white;
+    width: 80px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: cadetblue;
+}
+
+
+
+.body{
+    margin: 80px 20px;
+}
+
+
+#htmlOptions{
+    margin-top: 30px;
+    margin-left: 20px;
+    line-height: 30px;
+}
+#htmlOptions li{
+    background-color: white;
+    color: rgb(12,60,80);
+    padding: 0 15px;
+    transition: .3s;
+    border: 1px solid black;
+}
+#htmlOptions li:hover{
+    background-color: rgb(157, 210, 212);
+    cursor: pointer;
+   
+}
+
+#resultContainer{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}

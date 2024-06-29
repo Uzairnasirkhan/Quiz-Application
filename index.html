@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+         <h1 class="quizapp">Quiz App</h1>
+    <div class="parent" id="parent">
+       <div class="fields" id="formContainer">
+        
+         <input type="text" placeholder="Enter your name" id="name">
+         <h4 class="hide" id="nameError">Name Required*</h4>
+         <br>
+         
+         <input type="text" placeholder="Enter email" id="email">
+         <h4 class="hide" id="emailError">Email Required*</h4>
+
+        <div>
+          <button onclick="formSubmitHandler()">Submit</button>
+        </div>
+
+      </div>
+
+      <div class="quizbutton hide" id="startContainer">
+        <a href="./quiz.html"><button>Start Quiz <i class="fa-solid fa-arrow-right"></i></button></a>
+    </div>
+
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>

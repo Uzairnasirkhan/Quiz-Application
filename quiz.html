@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body onload="startQuiz()">
+
+    <div class="quizContainer quizparent">
+        <!-- header -->
+        <div class="header">
+            <section>
+                <div>
+                    <span>Name:</span>
+                    <span id="userName">Jaffar</span>
+                </div>
+                <div>
+                    <span>
+                        Email:
+                    </span>
+                    <span id="userEmail">jaffar@gmail.com</span>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <span>Timer:</span>
+                    <span>00:00</span>
+                </div>
+            </section>
+        </div>
+
+
+
+        
+    <!-- body -->
+     <div class="body">
+        <div>
+            <h3 id="htmlQues">
+                </h1>
+        </div>
+        <div>
+            <ul id="htmlOptions">
+
+            </ul>
+        </div>
+     </div>
+
+
+
+     <!-- footer -->
+      <div class="footer">
+        <div id="counter">
+            <span id="currentCount" > 1</span>/<span id="totalCount" ></span>
+        </div>
+
+        <div>
+            <button onclick="nextQues()" id="nextQuesBtn" class="hide">Next</button>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="hide" id="resultContainer">
+        
+       <h2 id="correctAns">Your score is: </h2> 
+        
+
+      </div>
+        
+    </div>
+
+
+
+
+    
+       
+
+
+
+
+
+
+
+    <script src="quiz.js"></script>
+</body>
+</html>
