@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body onload="startQuiz()">
 
@@ -25,8 +26,8 @@
             </section>
             <section>
                 <div>
-                    <span>Timer:</span>
-                    <span>00:00</span>
+                    <span>Time:</span>
+                    <span id="countDown"></span>
                 </div>
             </section>
         </div>
@@ -35,7 +36,7 @@
 
         
     <!-- body -->
-     <div class="body">
+     <div class="body" id="quizBody">
         <div>
             <h3 id="htmlQues">
                 </h1>
@@ -45,12 +46,13 @@
 
             </ul>
         </div>
+       
      </div>
 
 
 
      <!-- footer -->
-      <div class="footer">
+      <div class="footer" id="footer">
         <div id="counter">
             <span id="currentCount" > 1</span>/<span id="totalCount" ></span>
         </div>
@@ -62,11 +64,11 @@
 
 
 
-
+      <h3 id="timeOut" class="hide">Time out!</h3>
 
       <div class="hide" id="resultContainer">
         
-       <h2 id="correctAns">Your score is: </h2> 
+       <h2 id="correctAns"></h2> 
         
 
       </div>

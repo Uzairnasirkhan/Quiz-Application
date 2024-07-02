@@ -30,10 +30,10 @@ var questions = [
             a: "Angel Michael AS",
             b: "Angel Israfil AS",
             c: "Angel Izrael AS",
-            d: "Angel Gabriel AS",
+            d: "Angel Jibrael AS",
 
         },
-        answer: "Angel Gabriel AS"
+        answer: "Angel Jibrael AS"
     }
     ,
     {
@@ -123,7 +123,7 @@ var questions = [
     }
 ]
 
-
+// console.log(questions[1].answer)
 var userName = document.getElementById("userName")
 var userEmail = document.getElementById("userEmail")
 userName.innerHTML = localStorage.getItem("name")
@@ -149,6 +149,15 @@ var correctAns = document.getElementById("correctAns")
 
 var quizContainer = document.getElementById("quizContainer")
 
+var quizBody = document.getElementById("quizBody")
+
+var timeOut = document.getElementById("timeOut")
+var footer = document.getElementById("footer")
+
+
+const startingMinutes = 5;
+let time = startingMinutes * 60;
+
 
 function startQuiz(){
      
@@ -167,21 +176,26 @@ function startQuiz(){
 
 
 
-function checkAnswer(ele){
+function checkAnswer(eleme){
 
    var liOptions = htmlOptions.getElementsByTagName("li")
-    var isCheck = ele.innerHTML === questions[indexNum].answer
-
+    // var isCheck = ele        .innerHTML === questions[indexNum].answer
+// console.log(liOptions)
      
         // if (liOptions.innerHTML === questions[indexNum].answer) {
         //     score++
 
         // }
-
-    if(isCheck){
+        // console.log(indexNum);
+    if(eleme.innerText === questions[indexNum].answer    ){
         score++
-        console.log(score++);
+       eleme.style.backgroundColor = "#a8f0cb"
        
+        // console.log(score++/);
+        // console.log(correct);
+    }
+    else{
+        eleme.style.backgroundColor = "#f0b1b1"
     }
     
     
@@ -199,7 +213,8 @@ function checkAnswer(ele){
 
 function showResult(){
     resultContainer.className = "show"
-    correctAns.innerHTML = "Your score is: " + score
+    correctAns.innerHTML = "You scored " + score + "/" +totalCount.innerHTML
+    nextQuesBtn.className = "hide"
 }
 
 
@@ -219,6 +234,35 @@ function nextQues() {
 
 
 
+
+
+const countDownEle = document.getElementById("countDown")
+
+function startTimer() {
+    const timerInterval = setInterval(() => {
+        let minutes = Math.floor(time / 60);
+        let seconds = time % 60;
+        seconds = seconds < 10 ? '0' + seconds : seconds;
+        countDownEle.innerText = `${minutes}:${seconds}`;
+        time--;
+
+        if (time < 0) {
+            clearInterval(timerInterval);
+            showResult()
+            quizBody.className = "hide"
+            timeOut.className = "show"
+            footer.className = "hide"
+            nextQuesBtn.className = "hide"
+
+        }
+    }, 1000);
+}
+
+
+window.onload = () => {
+    startQuiz();
+    startTimer();
+};
 
 
 

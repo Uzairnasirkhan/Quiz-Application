@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: rgb(105,206,199);
+    background-color: rgb(120, 207, 201);
 }
 
 .quizapp{
@@ -52,6 +52,10 @@ body{
     background-color: rgb(23,107,135);
 }
 
+.quizbutton{
+    display: flex;
+    justify-content: center;
+}
 
 .quizbutton a button{
     height: 50px;
@@ -120,12 +124,12 @@ body{
 
 
 .body{
-    margin: 80px 20px;
+    margin: 60px 20px;
 }
 
 
 #htmlOptions{
-    margin-top: 30px;
+    margin-top: 20px;
     margin-left: 20px;
     line-height: 30px;
 }
@@ -137,13 +141,30 @@ body{
     border: 1px solid black;
 }
 #htmlOptions li:hover{
-    background-color: rgb(157, 210, 212);
+    background-color: rgb(208, 209, 209);
     cursor: pointer;
    
 }
 
 #resultContainer{
-    width: 100%;
-    margin-top: 20px;
+    width: 40%;
+    margin: 5px auto;
+    background-color: cadetblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
     text-align: center;
+}
+
+#timeOut{
+    text-align: center;
+    margin: 20px auto;
+    background-color: red;
+    color: white;
+    width: 30%;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+
 }
