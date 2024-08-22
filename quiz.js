@@ -155,7 +155,7 @@ var timeOut = document.getElementById("timeOut")
 var footer = document.getElementById("footer")
 
 
-const startingMinutes = 5;
+const startingMinutes = 3;
 let time = startingMinutes * 60;
 
 
