@@ -149,10 +149,9 @@ body{
 #resultContainer{
     width: 40%;
     margin: 5px auto;
-    background-color: cadetblue;
     color: white;
-    border: none;
-    border-radius: 5px;
+    border: 2px solid  rgb(255, 255, 90);
+    border-radius: 2px;
     padding: 5px;
     text-align: center;
 }
