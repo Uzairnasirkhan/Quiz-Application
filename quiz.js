@@ -213,7 +213,14 @@ function checkAnswer(eleme){
 
 function showResult(){
     resultContainer.className = "show"
-    correctAns.innerHTML = "You scored " + score + "/" +totalCount.innerHTML
+    correctAns.innerHTML = "You scored " + score + "/" +totalCount.innerHTML;
+     if(score<5){
+        resultContainer.style.backgroundColor = "red";
+    }
+    else{
+        resultContainer.style.background = "rgb(10,141,1)";
+        resultContainer.style.background = "linear-gradient(159deg, rgba(10,141,1,1) 0%, rgba(27,204,3,1) 60%, rgba(81,255,60,1) 100%)";
+    }
     nextQuesBtn.className = "hide"
 }
 
