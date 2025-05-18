@@ -219,7 +219,8 @@ function showResult(){
     }
     else{
         resultContainer.style.background = "rgb(10,141,1)";
-        resultContainer.style.background = "linear-gradient(159deg, rgba(10,141,1,1) 0%, rgba(27,204,3,1) 60%, rgba(81,255,60,1) 100%)";
+        resultContainer.style.backgroundColor = "#5F9EA0";
+        resultContainer.style.transition = all ease .3s
     }
     nextQuesBtn.className = "hide"
 }
