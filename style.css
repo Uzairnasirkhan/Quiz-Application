@@ -150,8 +150,7 @@ body{
     width: 40%;
     margin: 5px auto;
     color: white;
-    border: 2px solid  rgb(255, 255, 90);
-    border-radius: 2px;
+    border-radius: 5px;
     padding: 5px;
     text-align: center;
 }
